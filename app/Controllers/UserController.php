@@ -62,7 +62,7 @@ class UserController extends BaseController
         $ary['server_port'] = $this->user->port;
         $ary['password'] = $this->user->passwd;
         $ary['method'] = $node->method;
-        $ary['protocol'] = $node->protocol ?? 'auth_aes128_md5';
+        $ary['proto'] = $node->protocol ?? 'auth_aes128_md5';
         $ary['obfs'] = $node->obfs ?? 'plain';
         $ary['type'] = $node->type ?? 'ShadowsocksR';
         if ($node->custom_method) {
