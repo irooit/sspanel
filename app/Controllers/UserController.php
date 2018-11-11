@@ -70,8 +70,9 @@ class UserController extends BaseController
         }
         $json = json_encode($ary);
         $json_show = json_encode($ary, JSON_PRETTY_PRINT);
-        $ssurl = $ary['method'] . ":" . $ary['password'] . "@" . $ary['server'] . ":" . $ary['server_port'];
-        $ssurl = $ary['server'] . ":" . $ary['server_port'] . ":" . $ary['proto'] . ":" . $ary['method'] .":". $ary['obfs'] .":".base64_encode($ary['password'])."/?remarks=&protoparam=&obfsparam=";
+        /*$ssurl = $ary['method'] . ":" . $ary['password'] . "@" . $ary['server'] . ":" . $ary['server_port'];*/
+        $enpass = base64_encode($ary['password']);
+        $ssurl = $ary['server'] . ":" . $ary['server_port'] . ":" . $ary['proto'] . ":" . $ary['method'] .":". $ary['obfs'] .":".$enpass."/?remarks=&protoparam=&obfsparam=";
         $ssqr = "ssr://" . base64_encode($ssurl);
 
         $surge_base = Config::get('baseUrl') . "/downloads/ProxyBase.conf";
