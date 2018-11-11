@@ -2,7 +2,8 @@
 
 //  PUBLIC_PATH
 define('PUBLIC_PATH', __DIR__);
-
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
 // Bootstrap
 require PUBLIC_PATH . '/../bootstrap/app.php';
 
