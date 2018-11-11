@@ -27,14 +27,14 @@ Please visit [releases pages](https://github.com/orvice/ss-panel/releases) to do
 ### Step 0
 
 ```
-git clone https://github.com/orvice/ss-panel.git
+git clone https://github.com/irooit/sspanel.git
 ```
 
 ### Step 1
 
 ```
-$ curl -sS https://getcomposer.org/installer | php
-$ php composer.phar  install
+ curl -sS https://getcomposer.org/installer | php
+ php composer.phar  install
 ```
 
 ### Step 2
