@@ -64,7 +64,7 @@ class UserController extends BaseController
         $ary['method'] = $node->method;
         $ary['protocol'] = $node->protocol ?? 'auth_aes128_md5';
         $ary['obfs'] = $node->obfs ?? 'plain';
-
+        $ary['type'] = $node->type ?? 'ShadowsocksR';
         if ($node->custom_method) {
             $ary['method'] = $this->user->method;
         }
