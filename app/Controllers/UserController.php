@@ -62,12 +62,16 @@ class UserController extends BaseController
         $ary['server_port'] = $this->user->port;
         $ary['password'] = $this->user->passwd;
         $ary['method'] = $node->method;
+        $ary['protocol'] = $node->protocol ?? 'auth_aes128_md5';
+        $ary['obfs'] = $node->obfs ?? 'plain';
+
         if ($node->custom_method) {
             $ary['method'] = $this->user->method;
         }
         $json = json_encode($ary);
         $json_show = json_encode($ary, JSON_PRETTY_PRINT);
         $ssurl = $ary['method'] . ":" . $ary['password'] . "@" . $ary['server'] . ":" . $ary['server_port'];
+        $ssurl = $ary['server'] . ":" . $ary['server_port'] . ":" . $ary['protocol'] . ":" . $ary['method'] .":". $ary['obfs'] .":". $ary['password'] ."/?remarks=&protoparam=&obfsparam=";
         $ssqr = "ss://" . base64_encode($ssurl);
 
         $surge_base = Config::get('baseUrl') . "/downloads/ProxyBase.conf";
