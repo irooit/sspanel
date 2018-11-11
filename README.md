@@ -33,8 +33,8 @@ git clone https://github.com/orvice/ss-panel.git
 ### Step 1
 
 ```
-$ curl -sS https://getcomposer.org/installer | php
-$ php composer.phar  install
+ curl -sS https://getcomposer.org/installer | php
+ php composer.phar  install
 ```
 
 ### Step 2
