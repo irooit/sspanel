@@ -44,6 +44,14 @@
 
     </div><!-- /.login-box-body -->
 </div><!-- /.login-box -->
+<div class="footer-copyright">
+    <div class="container">
+        &copy; {$config["appName"]}  Powered by <a class="orange-text text-lighten-3" href="https://github.com/hongcoo/sspanel">ss-panel</a> {$config["version"]}
+    </div>
+    <div style="display:none;">
+        {$analyticsCode}
+    </div>
+</div>
 
 <!-- jQuery 2.1.3 -->
 <script src="/assets/public/js/jquery.min.js"></script>
