@@ -47,7 +47,7 @@
 <div class="footer-copyright" style="text-align:center;">
     <div class="container">
         &copy; {$config["appName"]}  Powered by <a class="orange-text text-lighten-3" href="https://github.com/hongcoo/sspanel">游趣科技</a> {$config["version"]}
-        备案号：<a href="http://www.miitbeian.gov.cn" target="_blank">津ICP备15008038号-1</a>
+        备案号：<a href="https://beian.miit.gov.cn" target="_blank">津ICP备15008038号-1</a>
     </div>
     <div style="display:none;">
         {$analyticsCode}
